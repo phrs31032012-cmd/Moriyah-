@@ -6,124 +6,166 @@
   <title>Moriyah GV Gás</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       margin: 0;
-      background-color: #f0f8ff;
-      text-align: center;
+      padding: 0;
+      background: #fffaf0;
+      color: #333;
     }
+
     header {
-      background-color: #004aad;
+      background-color: #ff6f61;
       color: white;
-      padding: 15px;
-      font-size: 22px;
-      font-weight: bold;
-    }
-    h2 {
-      color: #004aad;
-      margin-top: 20px;
-    }
-    .promo {
-      color: #ff4500;
-      font-size: 20px;
-      font-weight: bold;
-      margin-bottom: 20px;
-    }
-    .produto {
-      background: white;
-      margin: 20px auto;
-      padding: 20px;
-      width: 90%;
-      max-width: 400px;
-      border-radius: 15px;
-      box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
-      text-align: left;
-    }
-    .produto img {
-      display: block;
-      margin: 0 auto 10px;
-      width: 140px;
-      height: 140px;
-      object-fit: contain;
-    }
-    .produto h3 {
       text-align: center;
-      margin-bottom: 10px;
+      padding: 25px 10px;
     }
-    .preco {
-      font-size: 16px;
+
+    header h1 {
+      margin: 0;
+      font-size: 2em;
+    }
+
+    header p {
+      margin: 5px 0 0 0;
+      font-style: italic;
+    }
+
+    main {
+      padding: 20px;
+      max-width: 650px;
+      margin: auto;
+    }
+
+    h2 {
+      color: #ff6f61;
+      margin-top: 30px;
+      text-align: center;
+    }
+
+    .produto {
+      background-color: #fff0f0;
+      padding: 20px;
+      border-radius: 12px;
+      margin-bottom: 20px;
+      box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+    }
+
+    .produto h3 {
+      margin-top: 0;
+      color: #ff3b2e;
+    }
+
+    .produto p {
       margin: 5px 0;
     }
-    .btn {
-      display: block;
-      margin: 15px auto 0;
-      padding: 12px;
-      background-color: #007bff;
+
+    .produto a {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 12px 20px;
+      background-color: #ff6f61;
       color: white;
       text-decoration: none;
+      border-radius: 8px;
       font-weight: bold;
-      border-radius: 10px;
-      text-align: center;
-      width: 80%;
+      transition: background 0.3s;
     }
-    .btn:hover {
-      background-color: #0056b3;
+
+    .produto a:hover {
+      background-color: #ff3b2e;
     }
-    footer {
-      margin-top: 30px;
+
+    .contato {
+      background-color: #f0fff0;
       padding: 20px;
-      background: #004aad;
+      border-radius: 12px;
+      margin-top: 20px;
+      box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+    }
+
+    .contato p, .contato ul {
+      margin: 10px 0;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #ff6f61;
       color: white;
-      font-size: 16px;
-      border-radius: 15px 15px 0 0;
+      font-style: italic;
     }
-    footer p {
-      margin: 8px 0;
-    }
-    footer .love {
-      color: #ffcc00;
+
+    .mensagem-carinho {
+      text-align: center;
+      background-color: #fff0f5;
+      color: #d63384;
+      padding: 15px;
+      border-radius: 12px;
+      margin: 25px 0;
       font-weight: bold;
-      font-size: 18px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    @media (max-width: 600px) {
+      .produto a {
+        width: 100%;
+        text-align: center;
+      }
     }
   </style>
 </head>
 <body>
-  <header>Moriyah GV Gás</header>
-  <h2>Nossos Produtos</h2>
-  <div class="promo">🔥 Promoção da Semana 🔥</div>
 
-  <!-- Liquigás -->
-  <div class="produto">
-    <h3 style="color:#ff4500;">Liquigás 13kg</h3>
-    <img src="https://i.imgur.com/Mnq8uhP.png" alt="Botijão Liquigás 13kg">
-    <p class="preco">💵 Dinheiro/Pix: <b>R$ 104,99</b></p>
-    <p class="preco">💳 Cartão: <b>R$ 109,99</b></p>
-    <a href="#" class="btn">📲 Pedir agora</a>
-  </div>
+  <header>
+    <h1>Moriyah GV Gás</h1>
+    <p>Com carinho, entregamos conforto na sua casa!</p>
+  </header>
 
-  <!-- Supergás Brás -->
-  <div class="produto">
-    <h3 style="color:#ff4500;">Supergás Brás 13kg</h3>
-    <img src="https://i.imgur.com/8gh9PVx.png" alt="Botijão Supergás Brás 13kg">
-    <p class="preco">💵 Dinheiro/Pix: <b>R$ 115,00</b></p>
-    <p class="preco">💳 Cartão: <b>R$ 120,00</b></p>
-    <a href="#" class="btn">📲 Pedir agora</a>
-  </div>
+  <main>
+    <h2>Produtos Disponíveis</h2>
 
-  <!-- Água Ingá -->
-  <div class="produto">
-    <h3 style="color:#ff4500;">Galão de Água Ingá 20L</h3>
-    <img src="https://i.imgur.com/zRoK4xg.png" alt="Galão de Água Ingá 20L">
-    <p class="preco">💵 Dinheiro/Pix: <b>R$ 14,99</b></p>
-    <p class="preco">💳 Cartão: <b>R$ 17,99</b></p>
-    <a href="#" class="btn">📲 Pedir agora</a>
-  </div>
+    <div class="produto">
+      <h3>Liquigás 13kg</h3>
+      <p>Dinheiro/Pix: R$ 104,99</p>
+      <p>Cartão: R$ 109,99</p>
+      <a href="https://wa.me/5531981043000" target="_blank">Pedir pelo WhatsApp</a>
+    </div>
 
-  <!-- Rodapé -->
+    <div class="produto">
+      <h3>Supergás Brás 13kg</h3>
+      <p>Dinheiro/Pix: R$ 115,00</p>
+      <p>Cartão: R$ 120,00</p>
+      <a href="https://wa.me/5531981043000" target="_blank">Pedir pelo WhatsApp</a>
+    </div>
+
+    <div class="produto">
+      <h3>Galão de Água Ingá 20L</h3>
+      <p>Dinheiro/Pix: R$ 14,99</p>
+      <p>Cartão: R$ 17,99</p>
+      <a href="https://wa.me/5531981043000" target="_blank">Pedir pelo WhatsApp</a>
+    </div>
+
+    <div class="mensagem-carinho">
+      Muito obrigado por escolher a Moriyah GV Gás! ❤️<br>
+      Nós te amamos e cuidamos do seu conforto!
+    </div>
+
+    <h2>Informações de Contato</h2>
+    <div class="contato">
+      <p><strong>Endereço:</strong> Rua Pedra Negra, 28 – Santa Maria, Vespasiano/MG</p>
+      <p><strong>Horário de Atendimento:</strong></p>
+      <ul>
+        <li>Segunda a Sexta: 7h30 às 21h</li>
+        <li>Sábado: 7h30 às 19h</li>
+        <li>Domingo: 7h30 às 14h</li>
+      </ul>
+      <p><strong>WhatsApp:</strong> <a href="https://wa.me/5531981043000" target="_blank">31 98104-3000</a></p>
+    </div>
+  </main>
+
   <footer>
-    <p>📍 Endereço: Rua Exemplo, 123 - Governador Valadares/MG</p>
-    <p>☎️ Telefone: (33) 99999-9999</p>
-    <p class="love">💙 Obrigado por escolher a Moriyah GV Gás!</p>
-    <p class="love">😍 Nós amamos nossos clientes!</p>
+    &copy; 2025 Moriyah GV Gás - Com amor e dedicação para você! ❤️
   </footer>
+
 </body>
 </html>
